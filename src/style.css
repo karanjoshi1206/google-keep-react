@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden !important;
+}
+.header {
+  /* min-width: 100%; */
+  background-color: rgb(255, 255, 32);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  padding: 10px 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.createnote {
+  display: flex;
+  justify-content: center;
+}
+.createnote .form {
+  position: relative;
+}
+.createnote .form input {
+  display: block;
+  width: 450px;
+  color: black;
+  padding: 5px 10px;
+  outline: none;
+  border-bottom: none;
+  border-width: 0;
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.createnote .form textarea {
+  outline: none;
+  width: 450px;
+  border-top: 0;
+  border-width: 0;
+  min-height: 200px;
+  padding: 15px;
+  box-shadow: 5px 10px 15px rgba(5, 5, 5, 0.507);
+}
+.createnote .form button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-width: 0;
+  background-color: rgb(255, 255, 32);
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  outline: none;
+}
+.createnote button:hover {
+  color: rgb(255, 255, 32);
+  background-color: black;
+}
+.note_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.note {
+  position: relative;
+  width: 350px;
+  margin: 20px;
+  padding: 10px 20px 20px 20px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.192);
+}
+
+.note p {
+  text-align: left;
+}
+.note h1 {
+  text-transform: capitalize;
+}
+.note button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  outline: none;
+  border-width: 0;
+  background-color: crimson;
+  color: white;
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.note button:hover {
+  color: crimson;
+  background-color: white;
+  border: 2px solid crimson !important;
+}
+@media (max-width: 990px) {
+  .createnote .form input {
+    width: 300px;
+  }
+
+  .createnote .form textarea {
+    width: 300px;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
